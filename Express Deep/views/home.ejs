@@ -1,0 +1,31 @@
+<%- include('partials/head') %>
+</head>
+
+<body>
+
+
+
+<%- include('partials/nav') %>
+
+
+  <main id="welcome-message">
+<h1>Here are our Registered Homes :</h1>
+<br>
+<br>
+<ul>
+  <% if (registeredhomes.length > 0) { %>
+    <% registeredhomes.forEach(home => { %>
+      <li>
+        <h3><%= home.HomeName %></h3>
+      </li>
+    <% }) %>
+  <% } else { %>
+    <p>No homes registered yet.</p>
+  <% } %>
+</ul>
+  </main>
+
+
+</body>
+
+</html>

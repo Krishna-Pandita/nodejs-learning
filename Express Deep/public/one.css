@@ -1,0 +1,91 @@
+body{
+  margin: 0%;
+  padding: 0%;
+}
+
+*{
+    margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+
+
+header{
+  height: 70px;
+  width: 100%;
+  background-color: rgb(198, 59, 9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header a{
+  color: white;
+  display: flex;
+  font-size: 20px;
+  text-decoration: none;
+}
+main{
+  height: 550px;
+  width: 100%;
+  background-color: rgb(229, 228, 226);
+  margin-top: 0%;
+  /* text-align: center; */
+  box-shadow: 2px 2px 5px gray;
+display: flex;
+/* justify-content: center; */
+/* align-items: center; */
+padding-top: 10px;
+padding-left: 55px;
+}
+
+#registration-done-message{
+  font-size: 23px;
+  color: black;
+}
+
+a{
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+}
+
+ #welcome-message{
+color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style:circle;
+  padding: 0;
+}
+
+li h3{
+  /* text-align: center; */
+  display: block;
+  /* margin-bottom: 10px; */
+  
+padding-top: 12px;
+}
+
+h1 {
+  display: inline;
+}
+
+#error-message{
+  display: flex;
+  justify-content: center;
+  font: 20px;
+  color: black;
+}
+
+
+#error-message{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  color: black;
+  padding-top: 50px;
+  font-weight: bold;
+}

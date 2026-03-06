@@ -1,0 +1,26 @@
+# --- Node.js ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm/
+.eslintcache
+
+# --- Environment Files ---
+.env
+.env.*
+!.env.example
+
+# --- Build & Logs ---
+dist/
+build/
+logs/
+*.log
+*.pid
+*.seed
+
+# --- IDE & OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

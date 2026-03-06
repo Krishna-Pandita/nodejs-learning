@@ -1,0 +1,46 @@
+body{
+  margin: 0%;
+  padding: 0%;
+}
+
+*{
+    margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+p{
+  color: rgb(128, 81, 0);
+}
+
+#Home-registration{
+text-align: center;
+font-size: larger;
+color: white;
+  display: flex;
+}
+
+#home-add-header{
+  height: 70px;
+  width: 100%;
+  background-color: rgb(198, 59, 9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#registration-form{
+  height: auto;
+  width: 100%;
+  background-color: #aea7a7;
+  padding: 16px;
+
+}
+
+#registration-form input{
+
+  height: 40px;
+  width: 300px;
+  text-align: center;
+
+}
