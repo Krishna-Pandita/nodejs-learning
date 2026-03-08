@@ -2,23 +2,24 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
-app.use(express.urlencoded({ extended: true }));
-
+// 1. Settings & Middleware
 app.set('view engine', 'ejs');
-app.set('views','views');
+app.set('views', 'views');
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, 'public')));
 
-const { errorfile } = require('./controllers/errorfile');
-const userRouter = require("./routes/userRoute");
+// 2. Routes
+const storeroute = require("./routes/storeroute");
 const { hostRouter } = require("./routes/hostRoute");
+const { errorfile } = require('./controllers/errorfile');
 
-app.use(express.static(path.join(__dirname,'public')));
+app.use(storeroute);        // Handles / and /bookings
+app.use("/host", hostRouter); // Handles /host/add-home
 
-app.use(userRouter);
-app.use("/host", hostRouter);
-
+// 3. 404 Catch-all (MUST BE LAST)
 app.use(errorfile);
 
 const port = 3000;
 app.listen(port, () => {
-  console.log(`server running at http://localhost:${port}`);
+    console.log(`Server running at http://localhost:${port}`);
 });
